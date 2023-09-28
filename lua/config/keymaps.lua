@@ -24,6 +24,7 @@ map("n", "<leader>r", "<cmd>Edit!<CR>")
 if vim.g.vscode then
   map("n", "<c-/>", "<Nop>", opts)
   map("n", "<c-_>", "<Nop>", opts)
+  map("n", "J", "j", opts)
   -- map("n", "<c-/>", ":call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>", opts)
   map("n", "<leader>d", ":call VSCodeNotify('workbench.action.tasks.runTask', 'Flash')<CR>", opts)
   map("n", "<leader>b", ":call VSCodeNotify('workbench.action.tasks.build')<CR>", opts)
